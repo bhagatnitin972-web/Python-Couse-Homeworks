@@ -1,9 +1,5 @@
-a=int(input("Enter first number:"))
-b=int(input("Enter second number:"))
-c=int(input("Enter third number:"))
-sum_of_numbers=a+b+c
-product_of_numbers=a*b*c
-average_of_numbers=sum_of_numbers/3
-print(f"Sum={sum_of_numbers}")
-print(f"Product={product_of_numbers}")
-print(f"Average={average_of_numbers:.2f}")
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
